@@ -14,6 +14,7 @@ public class ModelResource {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
+	@Path("/do")
 	public List<Model> post(List<Model> models) {
 		System.out.println("Receiving and returning " + models.size() + " objects");
 		return models;
